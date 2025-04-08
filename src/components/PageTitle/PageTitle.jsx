@@ -1,3 +1,5 @@
+import { Title } from "./PageTitle.styled"
+
 export const PageTitle = ({title}) => {
-    return <h1>{title}</h1>
+    return <Title>{title}</Title>
 }

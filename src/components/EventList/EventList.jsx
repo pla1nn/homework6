@@ -1,8 +1,9 @@
 import EventItem from '../EventItem/EventItem'
+import { List } from './EventList.styled';
 
 export const EventList = ({ events }) => {
   return (
-    <ul>
+    <List>
       {events.map(({ name, location, speaker, type, time }) => {
         return <EventItem
           key={name}
@@ -14,6 +15,6 @@ export const EventList = ({ events }) => {
           end={time.end}
         />;
       })}
-    </ul>
+    </List>
   );
 };
